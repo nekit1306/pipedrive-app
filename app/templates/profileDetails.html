@@ -1,0 +1,41 @@
+<div class="details-header">
+    <h2 class="profile-details-name"><%= name %></h2>
+    <h3 class="profile-details-deals">Deals</h3>
+</div>
+    <div class="details-wrapper-panel clearfix">
+    <div class="person-details-wrapper">
+        <table class="details-wrapper">
+            <tbody>
+            <tr>
+                <td class="profile-item">Phone</td>
+                <td class="profile-item-value"><%= formatContactType(phone) %></td>
+            </tr>
+            <tr>
+                <td class="profile-item">E-mail</td>
+                <td class="profile-item-value"><%= formatContactType(email) %></td>
+            </tr>
+            <tr>
+                <td class="profile-item">Added</td>
+                <td class="profile-item-value"><%= formatAddedTime(add_time) %></td>
+            </tr>
+            <tr>
+                <td class="profile-item">Open deals</td>
+                <td class="profile-item-value"><%= open_deals_count %></td>
+            </tr>
+            <tr>
+                <td class="profile-item">Next activity</td>
+                <td class="profile-item-value"><%= formatActivity(next_activity_date) %></td>
+            </tr>
+            <tr>
+                <td class="profile-item">Last activity</td>
+                <td class="profile-item-value"><%= formatActivity(last_activity_date) %></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="person-deals-wrapper"></div>
+</div>
+<div class="deals-info">
+
+</div>
+<br />

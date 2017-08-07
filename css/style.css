@@ -1,0 +1,263 @@
+
+body{
+    position: absolute;
+    top: 0;
+    bottom:0;
+    width:100%;
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+
+body.loading:before{
+    position: absolute;
+    content: '';
+    background: rgba(219, 219, 219, 0.5) url(../images/loading-spinner.gif) no-repeat;
+    background-position: center center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h1,h2,h3{
+    margin:0;
+    font-weight:300;
+}
+
+a{
+    color: #434343;
+}
+
+p{
+    margin-bottom:0;
+}
+
+
+.page-container{
+    position: absolute;
+    width: 100%;
+    top:50px;
+    bottom:0;
+}
+
+.content{
+    position: relative;
+    max-width:1000px;
+    min-width:600px;
+    margin: 0 auto;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    height:50px;
+    background: #3d4145;
+}
+
+.header-logo{
+    float:left;
+    width: 172px;
+    background: transparent url("../images/logo_header.png") 12px 16px no-repeat;
+    background-size: 100px 22px;
+}
+
+.header-logo > a{
+    display: block;
+    height:50px;
+}
+
+nav ul.nav-left{
+    float:left;
+    margin:0;
+}
+
+nav ul.nav-left>li{
+    display: block;
+    float:left;
+}
+
+nav ul.nav-left>li>a{
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    font-weight: normal;
+    padding: 13px 30px;
+    font-size: 16px;
+    line-height: 25px;
+    height: 50px;
+    text-decoration: none;
+}
+
+nav ul.nav-left>li>a{
+    background-repeat: no-repeat;
+    background-position: 10px 14px;
+    padding-left: 40px;
+    transition: opacity .4s ease;
+}
+
+nav ul.nav-left>li>a:hover{
+    opacity:0.7;
+}
+
+
+nav ul.nav-left>li.nav-deals>a{
+    background-image: url('../images/growth.svg');
+}
+
+nav ul.nav-left>li.nav-activities>a{
+    background-image: url('../images/activities.svg');
+}
+
+
+
+.sidebar-wrapper{
+    position: absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width: 300px;
+    background: #ffffff;
+    border-right:1px solid #ddd;
+}
+
+.main-area-wrapper{
+    position: absolute;
+    top:0;
+    left:300px;
+    right:0;
+    height: 100%;
+}
+
+#blank-profile{
+    padding-top:80px;
+}
+
+.not-found{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    display: none;
+    text-align: center;
+}
+
+.not-found h1{
+    padding-top:150px;
+}
+
+
+#profile-list ul li a{
+    padding: 10px 15px;
+}
+
+#profile-list ul li{
+    background: #fcfcfc;
+    border-bottom:1px solid #ddd;
+}
+
+#profile-list ul li.active, #profile-list ul li.active:hover{
+    background: #009bc0;
+}
+#profile-list ul li:hover{
+    background-color: #eee;
+}
+
+#profile-list ul li.active a{
+    color: #ffffff;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+}
+
+.profile-info h3{
+    font-weight:400;
+    font-size:22px;
+}
+
+#profile-details{
+    padding-top:20px;
+}
+
+#blank-profile h2{
+    margin-bottom:20px;
+}
+
+
+.profile-details-name{
+    width: 50%;
+    float: left;
+    font-weight:400;
+    padding-top: 22px;
+}
+
+.profile-details-deals{
+    width: 50%;
+    float: right;
+    padding-top: 27px;
+    font-weight:400;
+}
+
+.profile-details .details-wrapper-panel{
+    display: block;
+    width: 822px;
+    height: 200px;
+    margin-bottom: 14px;
+    background-color: #ffffff;
+    padding: 16px;
+    border: 1px solid #e0e4e7;
+    border-radius: 4px;
+}
+
+.details-header{
+    height: 90px;
+}
+
+.details-wrapper-panel{
+    background: #fff;
+    padding:10px;
+    border:1px solid #ddd;
+    box-shadow: 1px 2px 4px 1px #ddd;
+    border-radius: 5px;
+}
+
+.person-details-wrapper,.person-deals-wrapper {
+    width: 50%;
+    float: left;
+}
+
+.person-deals-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 5px;;
+    box-shadow: 0 1px 4px 0 #ddd;
+}
+
+.table{
+    margin-bottom:0;
+}
+
+
+table.details-wrapper,table.deals-wrapper{
+    width:100%;
+}
+
+table.details-wrapper td.profile-item{
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.deals-list-title,.deals-list-sum{
+    width:50%;
+}
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap and App CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <title>Pipedrive app</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="header-logo">
+            <a href="#"></a>
+        </div>
+        <!-- Some Navigation for better view -->
+        <ul class="nav-left">
+            <li class="nav-deals"><a href="#">Deals</a></li>
+            <li class="nav-activities"><a href="#">Activities</a></li>
+        </ul>
+    </nav>
+    <div class="page">
+        <div class="page-container">
+            <div class="sidebar-wrapper">
+                <div id="profile-list"></div>
+            </div>
+
+            <div class="main-area-wrapper">
+                <div class="content">
+                    <div id="profile-details"></div>
+                </div>
+            </div>
+            <div class="not-found"><h1>Sorry, page cannot be found</h1></div>
+        </div>
+    </div>
+
+    <!--Require.js script -->
+    <script data-main="app/main" src="libs/require.js"></script>
+
+</body>
+</html>
